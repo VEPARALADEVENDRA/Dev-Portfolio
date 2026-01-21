@@ -12,7 +12,7 @@ export default function Contact() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
@@ -25,7 +25,7 @@ export default function Contact() {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false, amount: 0.2 }}
                         className="space-y-8"
                     >
                         <h3 className="text-2xl font-semibold mb-6">Let&apos;s Talk</h3>
@@ -77,7 +77,7 @@ export default function Contact() {
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false, amount: 0.2 }}
                         className="bg-card border rounded-xl p-8 shadow-sm"
                     >
                         <form className="space-y-6">

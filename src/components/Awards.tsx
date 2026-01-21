@@ -12,7 +12,7 @@ export default function Awards() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Awards & Certifications</h2>
@@ -26,7 +26,7 @@ export default function Awards() {
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: false, amount: 0.2 }}
                             className="bg-card border rounded-xl p-6 shadow-sm hover:shadow-md transition-all flex items-start gap-4"
                         >
                             <div className="p-3 bg-primary/10 rounded-full text-primary shrink-0">

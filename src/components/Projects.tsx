@@ -12,7 +12,7 @@ export default function Projects() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
@@ -26,7 +26,7 @@ export default function Projects() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: false, amount: 0.2 }}
                             className="bg-card border rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group"
                         >
                             <div className="h-48 bg-secondary/50 flex items-center justify-center relative overflow-hidden">

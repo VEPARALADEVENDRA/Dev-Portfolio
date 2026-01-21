@@ -22,7 +22,7 @@ export default function Skills() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">Technical Skills</h2>
@@ -37,7 +37,7 @@ export default function Skills() {
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: catIndex * 0.1 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: false, amount: 0.2 }}
                             className="bg-card border rounded-xl p-6 shadow-sm hover:shadow-md transition-all hover:border-primary/50"
                         >
                             <h3 className="text-xl font-bold mb-6 capitalize text-center border-b pb-2">
@@ -51,7 +51,7 @@ export default function Skills() {
                                         variants={fadeInAnimationVariants}
                                         initial="initial"
                                         whileInView="animate"
-                                        viewport={{ once: true }}
+                                        viewport={{ once: false, amount: 0.2 }}
                                         custom={index}
                                     >
                                         <div className="flex flex-col items-center gap-2 p-2 min-w-[80px]">

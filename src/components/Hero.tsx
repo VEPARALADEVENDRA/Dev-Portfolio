@@ -66,6 +66,27 @@ export default function Hero() {
                         ))}
                     </div>
                 </motion.div>
+                {/* Astronaut Image - High Fidelity Blend */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 1, delay: 0.2 }}
+                    className="relative flex justify-center items-center"
+                >
+                    {/* Glowing backdrop for depth */}
+                    <div className="absolute w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[80px] -z-10 animate-pulse" />
+                    <div className="absolute w-[300px] h-[300px] bg-cyan-500/10 rounded-full blur-[60px] -z-10 top-10 right-10" />
+
+                    <div className="astronaut-float relative z-10 w-full max-w-[600px] mix-blend-lighten filter contrast-125 brightness-110">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                            src="/astronaut_v2.png"
+                            alt="Astronaut floating in space"
+                            className="w-full h-auto drop-shadow-2xl opacity-90"
+                            style={{ maskImage: 'radial-gradient(ellipse at center, black 70%, transparent 100%)' }} // Subtle feathering edges just in case
+                        />
+                    </div>
+                </motion.div>
             </div>
         </section>
     );
